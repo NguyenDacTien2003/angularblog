@@ -1,0 +1,306 @@
+<h1>CodeLean Blog</h1>
+<h3>{{message}}</h3>
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+    <meta charset="UTF-8" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.7/angular.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.7/angular-route.min.js"></script>
+    <link
+            rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+            integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+            crossorigin="anonymous"
+    />
+    <script
+            src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"
+    ></script>
+    <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+            integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+            crossorigin="anonymous"
+    ></script>
+    <script
+            src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+            integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+            crossorigin="anonymous"
+    ></script>
+    <link
+            href="https://fonts.googleapis.com/css?family=Staatliches"
+            rel="stylesheet"
+    />
+    <link
+            href="https://fonts.googleapis.com/css?family=Cinzel|Major+Mono+Display|Sedgwick+Ave+Display"
+            rel="stylesheet"
+    />
+    <link
+            href="https://fonts.googleapis.com/css?family=Cinzel|Lekton|Major+Mono+Display|Sedgwick+Ave+Display"
+            rel="stylesheet"
+    />
+    <link
+            href="https://fonts.googleapis.com/css?family=Cinzel|Lekton|Major+Mono+Display|Mate+SC|Sedgwick+Ave+Display"
+            rel="stylesheet"
+    />
+    <link
+            href="https://fonts.googleapis.com/css?family=Lato"
+            rel="stylesheet"
+    />
+    <link
+            rel="stylesheet"
+            href="themify-icons-font/themify-icons/themify-icons.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+</head>
+<title>CodeLean</title>
+
+<body>
+<div id="main">
+    <div id="header">
+        <ul id="nav">
+            <li><a href="#/">Home</a></li>
+            <li><a href="#/member">Member</a></li>
+            <li><a href="#/blog">Blog</a></li>
+            <li><a href="#/about">About</a></li>
+        </ul>
+    </div>
+
+    <div id="body">
+        <!--Home-->
+        <script type="text/ng-template" id="pages/home.html">
+            <h1>Home CodeLean.vn</h1>
+            <h3>{{message}}</h3>
+        </script>
+        <!--Blog-->
+        <script type="text/ng-template" id="pages/blog.html">
+            <h1>Blog CodeLean.vn</h1>
+            <h3>{{message}}</h3>
+        </script>
+        <!--About-->
+        <script type="text/ng-template" id="pages/about.html">
+            <h1>About CodeLean.vn</h1>
+            <h3>{{message}}</h3>
+        </script>
+        <!--Member-->
+        <script type="text/ng-template" id="pages/member.html">
+            <h1>Member CodeLean.vn</h1>
+            <h3>{{message}}</h3>
+        </script>
+        <div ng-view></div>
+        <script src="app.js"></script>
+    </div>
+</div>
+
+<!---->
+
+<div
+        id="carouselExampleIndicators"
+        class="carousel slide"
+        data-ride="carousel"
+>
+    <a
+            class="carousel-control-prev"
+            href="#carouselExampleIndicators"
+            role="button"
+            data-slide="prev"
+    >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Précedent</span>
+    </a>
+    <a
+            class="carousel-control-next"
+            href="#carouselExampleIndicators"
+            role="button"
+            data-slide="next"
+    >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Suivant</span>
+    </a>
+</div>
+<div class="container">
+    <div class="row justify-content-between">
+        <div class="col-md-5">
+            <img
+                    class="img-fluid"
+                    src="https://cf.shopee.vn/file/9a2a2bfa458e14af058c051e3e2f4f8c"
+                    class="img-responsive"
+            />
+        </div>
+        <div class="col-md-6">
+            <p class="date">31 JANVIER 2020</p>
+            <h2 class="titre">BALLERINA</h2>
+            <p class="texte">
+                Tank top là tên gọi của áo ba lỗ (hay áo khoác nách) bắt nguồn từ Mỹ và Canada,
+                dùng để chỉ những chiếc áo thun không tay. Đây là một trong số những trang phục unisex,
+                tức là cả nam và nữ đều mặc được. Tuy nhiên, trước khi mặc nó, bạn cần cân nhắc kỹ xem mình sẽ đến đâu,
+                gặp ai xem liệu chiếc áo này có phù hợp hay không. Đây là món đồ phù hợp và được yêu thích nhất trong những ngày thời tiết nóng bức như ngày hè.
+                
+            </p>
+        </div>
+    </div>
+    <div class="row justify-content-between">
+        <div class="col-md-6">
+            <p class="date">31 JANVIER 2020</p>
+            <h2 class="titre">FROUFROUS</h2>
+            <p class="texte">
+                Entre Le Songe d'une nuit d'été de William Shakespeare et le Peau
+                d'âne version Jacques Demy, le défilé haute couture nous transporte
+                au sein d'une parenthèse enchantée où les sylphides avancent
+                masquées et dont les robes longues rebrodées de fleurs frôlent avec
+                grâce un tapis de mousse fraîchement posé. Robes de princesse et
+                capuchon sont évidemment au rendez-vous. Velours précieux carbone,
+                plissé soleil poudré, plumetis mystérieux, lamé hypnotique, sequins
+                seconde peau... Maria Grazia Chiuri manie avec talent les jeux de
+                matières qu'elle associe, superpose, rebrode et sublime pour une
+                collection haute couture poétique à souhait.
+            </p>
+        </div>
+        <div class="col-md-5">
+            <img
+                    class="img-fluid"
+                    src="https://obatambeienwasirherbal.com/don-che-gabbana/imager_33877.jpg"
+            />
+        </div>
+    </div>
+    <div class="row justify-content-between">
+        <div class="col-md-5">
+            <img
+                    class="img-fluid"
+                    src="https://www.giaonhan247.com/wp-content/uploads/2021/06/ao-thun-sfera-ebbasta-x-dolceandgabbana.jpg"
+                    class="img-responsive"
+            />
+        </div>
+        <div class="col-md-6">
+            <p class="date">31 JANVIER 2019</p>
+            <h2 class="titre">DIOR S'ENVOLE</h2>
+            <p class="texte">
+                Sous forme de masques, de colliers ou de ceintures, tout un
+                bestiaire s'anime sur les silhouettes des belles du bois Dior.
+                Papillons et insectes viennent se poser avec délicatesse sur un
+                décolleté quand les plumes altières couronnent les têtes. Au détour
+                d'un cou, un serpent : le bois enchanté serait-il finalement le
+                nouveau jardin d'Eden ?
+            </p>
+        </div>
+    </div>
+    <div class="row justify-content-between">
+        <div class="col-md-6">
+            <p class="date">31 JANVIER 2019</p>
+            <h2 class="titre">MONOCHROME</h2>
+            <p class="texte">
+                Angelina Jolie với dáng vẻ thoải mái và một tinh thần rất tốt khi được bắt gặp ở sân bay Heathrow ở London cuối tháng 7 vừa rồi. Bà mẹ 6 con diện một bộ đồ ngủ và đôi dép mang thương hiệu Valentino - tổng giá trị set đồ mà nữ minh tinh mặc lên tới 40 triệu đồng.
+            </p>
+        </div>
+        <div class="col-md-5">
+            <img
+                    class="img-fluid"
+                    src="https://image.thanhnien.vn/w2048/Uploaded/2022/ayhunka/2022_07_31/angelina-jolie-copertina-slider-794.jpeg"
+            />
+        </div>
+    </div>
+    <div class="row justify-content-between">
+        <div class="col-md-5">
+            <img
+                    class="img-fluid"
+                    src="https://i.pinimg.com/originals/5f/09/6d/5f096d52b10d5906204a00435c8e291b.png"
+                    class="img-responsive"
+            />
+        </div>
+        <div class="col-md-6">
+            <p class="date">31 JANVIER 2019</p>
+            <h2 class="titre">NO GENDER NEEDED</h2>
+            <p class="texte">
+                Que ce soit dans le cinéma, dans l’art ou dans la mode, l'audace
+                était tendance pendant les années 60. Les vedettes du moment
+                inspirent l’innovation et la mode des sixties : la fameuse Elizabeth
+                Taylor pour Andy Warhol et le Pop Art, les silhouettes sexy qui se
+                dessinent à l’image de Brigitte Bardot, ou encore le chic à la
+                Jackie Kennedy qui est largement imité ! Dans une ère où s’expriment
+                les volontés de se distinguer et d’être original, la libération de
+                la femme et de son style vestimentaire s’imposent ! Les créateurs en
+                vogue fondent leurs collections sur cette émancipation de la femme :
+                une mode plus sexy s’installe lorsqu’André Courrèges introduit la
+                mini-jupe dans ses défilés, inspiré par Mary Quant. En parallèle à
+                cette mode très féminine, le pantalon devient désormais unisexe ; le
+                trench et le smoking, auparavant réservés aux hommes, se voient
+                imposés par Yves Saint Laurent qui masculinise les tendances !
+            </p>
+        </div>
+    </div>
+</div>
+<!---->
+</body>
+<footer>
+    <div id="footer">
+        <div id="heading-footer">
+            <div class="text-h-f">
+                <p>Get connected with us on social networks!</p>
+            </div>
+            <div class="icon-h-f">
+                <i class="ti-facebook"></i>
+                <i class="ti-twitter-alt"></i>
+                <i class="ti-google"></i>
+                <i class="ti-instagram"></i>
+                <i class="ti-linkedin"></i>
+            </div>
+        </div>
+        <div id="body-footer">
+            <div class="row">
+                <div class="w-25 text-white">
+                    <div class="title-f-t-b mb-8">
+                        <p>company name</p>
+                        <div class="u-l"></div>
+                    </div>
+                    <div class="text-b-f">
+                        <p>
+                            Here you can use rows and columns to organize your footer
+                            content. Lorem ipsum dolor sit amet, consectetur adipisicing
+                            elit
+                        </p>
+                    </div>
+                </div>
+                <div class="w-25 text-white">
+                    <div class="title-f-t-b mb-8">
+                        <p>company name</p>
+                        <div class="u-l"></div>
+                    </div>
+                    <div class="text-b-f">
+                        <p>
+                            Here you can use rows and columns to organize your footer
+                            content. Lorem ipsum dolor sit amet, consectetur adipisicing
+                            elit
+                        </p>
+                    </div>
+                </div>
+                <div class="w-25 text-white">
+                    <div class="title-f-t-b mb-8">
+                        <p>company name</p>
+                        <div class="u-l"></div>
+                    </div>
+                    <div class="text-b-f">
+                        <p>
+                            Here you can use rows and columns to organize your footer
+                            content. Lorem ipsum dolor sit amet, consectetur adipisicing
+                            elit
+                        </p>
+                    </div>
+                </div>
+                <div class="w-25 text-white">
+                    <div class="title-f-t-b mb-8">
+                        <p>company name</p>
+                        <div class="u-l"></div>
+                    </div>
+                    <div class="text-b-f">
+                        <p>
+                            Here you can use rows and columns to organize your footer
+                            content. Lorem ipsum dolor sit amet, consectetur adipisicing
+                            elit
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+</html>
